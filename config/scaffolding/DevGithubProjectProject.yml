@@ -7,6 +7,43 @@ packages:
   gitUrl: https://github.com/RaviSK0509
   gitUsername: RaviSK0509
   gitBranch: main
+services:
+- serviceName: project.devgithubproject.soap.connections:testAccount
+  packages:
+  - name: DevGithubProjectProject
+    version: "1.0"
+- serviceName: project.devgithubproject.soap.connectors.testSoap_.connectors:SoapMultiportAPI_PortType_AddIntAPI
+  packages:
+  - name: DevGithubProjectProject
+    version: "1.0"
+- serviceName: pub.client:soapClient
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.838
+- serviceName: project.devgithubproject.soap.connectors.testSoap_.connectors:SoapMultiportAPI_PortType_DivideIntAPI
+  packages:
+  - name: DevGithubProjectProject
+    version: "1.0"
+- serviceName: project.devgithubproject.soap.connectors.testSoap_.connectors:SoapMultiportAPI_PortType_MultiPlyIntAPI
+  packages:
+  - name: DevGithubProjectProject
+    version: "1.0"
+- serviceName: project.devgithubproject.soap.connectors.testSoap_.responseServices:SoapMultiportAPI_PortType_AddIntAPI_Response
+  packages:
+  - name: DevGithubProjectProject
+    version: "1.0"
+- serviceName: project.devgithubproject.soap.connectors.testSoap_.responseServices:SoapMultiportAPI_PortType_DivideIntAPI_Response
+  packages:
+  - name: DevGithubProjectProject
+    version: "1.0"
+- serviceName: project.devgithubproject.soap.connectors.testSoap_.responseServices:SoapMultiportAPI_PortType_MultiPlyIntAPI_Response
+  packages:
+  - name: DevGithubProjectProject
+    version: "1.0"
+- serviceName: project.devgithubproject.soap.connectors.testSoap_.responseServices:genericFault_Response
+  packages:
+  - name: DevGithubProjectProject
+    version: "1.0"
 configurationVariables:
   jdbcfunc.SAPTxStore.failFastMode: false
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
